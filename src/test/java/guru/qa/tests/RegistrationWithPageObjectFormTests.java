@@ -21,10 +21,13 @@ public class RegistrationWithPageObjectFormTests extends TestBase {
         registrationPage.openPage();
         registrationPage.typeFirstName(firstName)
                         .typeLastName(lastName)
-                        .typeUserEmail(userEmail);
-        $("#genterWrapper").$(byText("Male")).click();
-        registrationPage.typeUserNumber(userNumber);
-        registrationPage.calendar.setData("25", "May", "2000");
+                        .typeUserEmail(userEmail)
+                        .selectGender("Male")
+                        .typeUserNumber(userNumber)
+//        registrationPage.selectGender("Male");
+//        $("#genterWrapper").$(byText("Male")).click();
+//                        .typeUserNumber(userNumber);
+                        .calendar.setData("25", "May", "2000");
 
         $("#subjectsInput").setValue("Math").pressEnter();
         $("#hobbiesWrapper").$(byText("Reading")).click();

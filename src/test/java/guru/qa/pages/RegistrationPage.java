@@ -1,11 +1,10 @@
 package guru.qa.pages;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import guru.qa.pages.components.CalendarComponent;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -18,7 +17,8 @@ public class RegistrationPage {
             lastNameInput = $("#lastName"),
             userNumberInput = $("#userNumber"),
             userEmailInput = $("#userEmail"),
-            currentAddressInput = $("#currentAddress");
+            currentAddressInput = $("#currentAddress"),
+            userGenderInput = $("#genterWrapper");
     public CalendarComponent calendar = new CalendarComponent();
 
     public void openPage() {
@@ -43,6 +43,10 @@ public class RegistrationPage {
     }
     public RegistrationPage typeCurrentAddress(String value) {
         currentAddressInput.setValue(value);
+        return this;
+    }
+    public RegistrationPage selectGender(String value) {
+        userGenderInput.$(byText(value)).click();
         return this;
     }
 
