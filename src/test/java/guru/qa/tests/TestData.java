@@ -7,10 +7,10 @@ public class TestData {
             lastName = "Petrov",
             userEmail = "ivan@petrov.com",
             userNumber = "9876543210",
-
-            subjects = "Math",
+            gender = "Male",
+            subject = "Math",
             hobbies = "Reading",
-            uploadPicture = "img/1.png",
+            picture = "1.png",
             currentAddress = "some street 7",
             state = "NCR",
             city = "Delhi";
