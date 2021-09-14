@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static guru.qa.tests.TestData.*;
 
-public class RegistrationFakerFormTests extends TestDataFaker {
+public class RegistrationWithFakerFormTests extends TestDataFaker {
 
     RegistrationPage registrationPage = new RegistrationPage();
     Faker faker = new Faker();
