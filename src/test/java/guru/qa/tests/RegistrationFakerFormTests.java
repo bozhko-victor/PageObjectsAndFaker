@@ -1,19 +1,20 @@
 package guru.qa.tests;
 
-import com.codeborne.selenide.Configuration;
+import com.github.javafaker.Faker;
 import guru.qa.pages.RegistrationPage;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 import static guru.qa.tests.TestData.*;
 
-public class RegistrationWithPageObjectFormTests extends TestBase {
+public class RegistrationFakerFormTests extends TestDataFaker {
 
     RegistrationPage registrationPage = new RegistrationPage();
+    Faker faker = new Faker();
+    String firstName = faker.name().firstName(),
+            lastName = faker.name().lastName(),
+            userEmail = faker.internet().emailAddress(),
+            userNumber = faker.phoneNumber().subscriberNumber(10),
+            currentAddress = faker.address().fullAddress();
 
        @Test
     void fillFormTest() {
