@@ -81,6 +81,7 @@ public class RegistrationPage {
         $("#submit").click();
         return this;
     }
+
     public void checkResults() {
 
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
@@ -95,19 +96,19 @@ public class RegistrationPage {
         $(".table-responsive").shouldHave(text(state + " " + city));
         $(".table-responsive").shouldHave(text("25 May,2000"));
     }
-    public void checkResultsFaker() {
-
-        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text(firstName + " " + lastName)); //
-        $(".table-responsive").shouldHave(text(userEmail));                  //
-        $(".table-responsive").shouldHave(text(gender));
-        $(".table-responsive").shouldHave(text(userNumber));                 //
-        $(".table-responsive").shouldHave(text(subject));
-        $(".table-responsive").shouldHave(text(hobbies));
-        $(".table-responsive").shouldHave(text(picture));
-        $(".table-responsive").shouldHave(text(currentAddress));               //
-        $(".table-responsive").shouldHave(text(state + " " + city));
-        $(".table-responsive").shouldHave(text("25 May,2000"));
-    }
+//    public void checkResultsFaker() {
+//
+//        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
+//        $(".table-responsive").shouldHave(text(firstName + " " + lastName)); //
+//        $(".table-responsive").shouldHave(text(userEmail));                  //
+//        $(".table-responsive").shouldHave(text(gender));
+//        $(".table-responsive").shouldHave(text(userNumber));                 //
+//        $(".table-responsive").shouldHave(text(subject));
+//        $(".table-responsive").shouldHave(text(hobbies));
+//        $(".table-responsive").shouldHave(text(picture));
+//        $(".table-responsive").shouldHave(text(currentAddress));               //
+//        $(".table-responsive").shouldHave(text(state + " " + city));
+//        $(".table-responsive").shouldHave(text("25 May,2000"));
+//    }
 
 }

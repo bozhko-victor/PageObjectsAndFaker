@@ -2,7 +2,7 @@ package guru.qa.tests;
 
 import com.github.javafaker.Faker;
 
-public class TestDataFaker {
+ public class TestDataFaker {
 
     static Faker faker = new Faker();
     public static String firstName = faker.name().firstName(),
