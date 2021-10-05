@@ -4,8 +4,6 @@ import com.github.javafaker.Faker;
 import guru.qa.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
-import static guru.qa.tests.TestData.*;
-
 public class RegistrationWithFakerFormTests extends TestDataFaker {
 
     RegistrationPage registrationPage = new RegistrationPage();
