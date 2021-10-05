@@ -1,7 +1,5 @@
 package guru.qa.tests;
 
-import com.github.javafaker.Faker;
-
 public class TestDataFaker {
 
     public static String
