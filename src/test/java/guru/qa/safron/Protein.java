@@ -59,6 +59,7 @@ public class Protein {
         }
 
 
+
     }
 
     void printAminoCount() {
