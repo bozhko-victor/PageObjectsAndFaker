@@ -50,6 +50,7 @@ public class Protein {
         } else {
             System.out.println("Protik v pakete!");
         }
+
     }
 
     void printAmino() {
