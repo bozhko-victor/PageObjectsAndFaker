@@ -56,11 +56,17 @@ public class Protein {
         for (int i = 0; i < aminoKisloty.length; i++) {
             System.out.println(aminoKisloty[i]);
         }
+
+
+
     }
 
     void printAminoCount() {
         for (int i = 0; i < countAmino.length; i++) {
             System.out.println(countAmino[i]);
         }
+
+
+
     }
 }
